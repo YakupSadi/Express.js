@@ -17,12 +17,10 @@ const cookieParser = require('cookie-parser')
 app.use(cookieParser())
 
 // Routers
-const image = require('./routers/image')
 const content = require('./routers/content')
 const sign_up = require('./routers/sign_up')
 
 // API
-app.use('/api/v1', image)
 app.use('/api/v1', sign_up)
 app.use('/api/v1/content', content)
 
